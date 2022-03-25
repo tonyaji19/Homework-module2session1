@@ -1,6 +1,7 @@
-import logo from './logo.svg';
+
 import './App.css';
-import data from './dataSpotify';
+import data from './data-Spotify';
+import Album from './albumcom';
 
 function App() {
   return (
@@ -11,13 +12,7 @@ function App() {
       </div>
 
       <div className="songSection">
-        <div className="songContent">
-          <img className="album" id="albumImage" src={data.album.images[0].url} alt="albumImage"
-          />
-          <p className="sTitle">{data.name}</p>
-          <p className="sArtist">{data.artists[0].name}</p>
-         <button className="btn select">Select</button>
-        </div>
+      <Album/>
       </div>
       </header>
     </div>
